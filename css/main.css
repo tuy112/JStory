@@ -1,0 +1,241 @@
+/* mainVisual */
+#mainVisual { 
+    height: 1150px; position: relative; cursor: default;
+    min-width:1560px; max-width: 1910px;
+    width: calc(100%, -250px);
+    margin-left: 250px;
+    transition: all 0,5s ease;
+}
+#mainVisual .dashBoard { 
+    position: relative;
+    margin-right: 230px;
+}
+#mainVisual .dashBoard .koreanIntro {
+    width: 980px; padding-top: 150px; margin: auto;
+    color:#111; font-weight: 500;
+    font-size: 48px;
+}
+#mainVisual .dashBoard .koreanIntro .hello {
+    color: #333; font-size: 48px; transition: 0.5s;
+}
+#mainVisual .dashBoard .koreanIntro .hello:hover {
+    -webkit-text-stroke: 1px black;
+    color: #fff;
+}
+#mainVisual .dashBoard .koreanIntro .highlight {
+    color:#7474da; font-size: 48px; transition: 0.5s;
+}
+#mainVisual .dashBoard .koreanIntro .type1:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+#mainVisual .dashBoard .koreanIntro .type2:hover {
+    background-color: #04f524;
+    color: white;
+}
+#mainVisual .dashBoard .koreanIntro .type3:hover {
+    background-color: #00a2ff;
+    color: white;
+}
+#mainVisual .dashBoard .koreanIntro .type4:hover {
+    background-color: #ffcc00;
+    color: white;
+}
+#mainVisual .dashBoard .englishIntro {
+    width: 980px; padding-top: 50px; margin: auto; 
+    font-size: 17px; font-style: italic; line-height: 1.8;
+}
+#mainVisual .scroll { 
+    position: absolute; bottom: 110px; left: 50%; transform: translateX(-50%); animation: ani 0.7s linear infinite alternate;
+}
+#mainVisual .scroll img { width: 110px; height: 80px; margin-right: 50px;}
+@keyframes ani {
+    0% { bottom:320px; }
+    100% { bottom:290px; }
+}
+
+
+/* main */
+/* common main */
+.main .recentMenu {
+    font-size: 16px;
+    font-weight: 500;
+    color: #00a2ff;
+    text-align: right; margin-right: 30px;
+}
+.main .work {
+    width: calc(100%, -250px);
+    margin-left: 250px;
+    transition: all 0,5s ease;
+}
+.main .work .inner { height: 100%;}
+.main .work h3 { 
+    padding-top: 50px; margin-bottom: 3px; color:#333;
+    font-weight: 600; font-size: 40px;
+}
+.main .work p { margin-bottom: 45px; color: #333; font-weight: 500; }
+
+/* work w1 */
+.main .w1 {
+    width: calc(100%, -350px);
+    margin-left: 350px;
+    transition: all 0,5s ease;
+}
+.main .w1 .inner { height: 100%;}
+.main .w1 .workInfo { display: flex;}
+.main .w1 .workInfo .imgWrap img { width: 220px;}
+.main .w1 .workInfo li {}
+.main .w1 .workInfo li:first-child { width: 300px; margin-right: 50px;}
+.main .w1 .workInfo li:last-child { width: 300px;}
+.main .w1 .workInfo li .imgWrap { margin-bottom: 5px;}
+.main .w1 .workInfo li .imgWrap img {transition: 0.5s;}
+.main .w1 .workInfo li .imgWrap img:hover { transform:scale(1.1); overflow: hidden; }
+
+.main .w1 .workInfo li h3 { font-size: 27px; font-weight: 600; margin-bottom: 10px;}
+.main .w1 .workInfo li p { font-size: 15px; line-height: 1.7; font-weight: 400;}
+
+.main .w1 .workInfo li .more { margin-top: -30px;}
+.main .w1 .workInfo li .more a { 
+    border: 2px solid #777; padding: 8px;
+    border-radius: 20%;
+    font-size: 11px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.main .w1 .workInfo li .more a:hover { background: #00a2ff;}
+
+
+
+/* work w2 */
+.main .w2 {
+    width: calc(100%, -350px);
+    margin-left: 350px;
+    transition: all 0,5s ease;
+}
+.main .w2 .inner { height: 100%;}
+.main .w2 h4 {
+    position: relative;
+    font-size: 25px;
+    color: #333;
+    line-height: 1;
+    font-weight: 700;
+}
+.main .w2 h4::before {
+    content: "";
+    position: absolute;
+    left: -40px; top: 50%;
+    width: 20px; height: 20px;
+    border-radius: 100%;
+    background: #ff5a2b;
+
+    transform: translateY(-50%);
+    border: 5px solid #1fa7f1;
+    box-sizing: border-box;
+}
+.main .w2 .shortView {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.main .w2 .shortView::before {
+    content: "";
+    position: absolute;
+    left: 8px; top: 0;
+    height: 100%;
+    border-left: 2px solid #ddd;
+}
+.main .w2 .shortView:first-child:before {
+    top: 10px; height: calc(100%-10px);
+}
+.main .w2 dl { padding: 20px 0 74px;}
+.main .w2 dl dt {
+    position: relative;
+    font-size: 25px;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.main .w2 dl dt::before {
+    content: "";
+    position: absolute;
+    left: -37px; top: 50%;
+    width: 13px; height: 13px;
+    border-radius: 100%;
+    background: #1fa7f1;
+
+    transform: translateY(-50%);
+    border: 3px solid #ff5a2b;
+    box-sizing: border-box;
+}
+.main .w2 dl dd {
+    line-height: 2.3;
+}
+.main .w2 dl dd strong {
+    display: block;
+    font-size: 17px;
+    color: #333;
+    line-height: 2.1;
+    font-weight: 400;
+}
+.main .w2 dl dd em {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+/* work w3 */
+.main .w3 {
+    width: calc(100%, -350px);
+    margin-left: 350px;
+    transition: all 0,5s ease;
+}
+.main .w3 .inner { height: 100%;}
+.main .w3 video { display: block; text-align: left;}
+
+/* work w4 */
+.main .w4 {
+    width: calc(100%, -350px);
+    margin-left: 350px;
+    transition: all 0,5s ease;
+}
+.main .w4 .inner { height: 300px;}
+.main .w4 .remote { margin: auto;}
+.main .w4 .remote li {}
+.main .w4 .remote li button { 
+    font-size: 16px; 
+    border: 2px solid #111; 
+    float: left; padding: 10px; 
+    transition: 0.3s; 
+    border-radius: 0.7em;
+    background: none;
+    margin-left: 10px;
+}
+.main .w4 .remote li button:hover { background-color: #1fa7f1; cursor: pointer;}
+.main .w4 .remote li:first-child { margin-left: 0;}
+
+
+/* footer */
+#footer { 
+	background: #131313;
+    position: relative;
+    z-index: 1;
+}
+#footer .inner { height: 180px;}
+#footer h3 { color: #fff; font-size: 30px; font-weight: 700; margin-bottom: 5px; margin-left: 15px; margin-top: 28px;}
+#footer .link { position: absolute; left: 20px; bottom: 0;}
+#footer .link li { float: right; margin-right: 10px;}
+#footer .link li:first-child { margin-left: 0;}
+#footer .link li img { width: 20px; height: 20px;}
+#footer .link li a {
+	font-size: 15px;
+    font-weight: 500;
+	color: #fff;
+	transition: 0.3s;
+}
+#footer .always p { font-weight: 100; font-size: 16px; font-style: italic; letter-spacing: -0.3px; color: #fff; padding-left: 15px;}
+
+#footer .top { position: absolute; right: 20px; bottom: 0;}
+#footer .top a i { font-size: 30px; border: 1px solid #fff; color: #fff;}

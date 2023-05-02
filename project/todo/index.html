@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지아이데이타 할 일 LIST</title>
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="http://jhyeok8.dothome.co.kr/">JSTORY 바로가기</a></li>
+                        <li><a href="http://jhyeok8.dothome.co.kr/project/bicycle/index.html">JSTORY[국토종주편] 바로가기</a></li>
+                        <li><a href="http://jhyeok8.dothome.co.kr/project/study/">나의 공부방 바로가기</a></li>
+                        <li><a href="#">정보처리기사 내용정리</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="container" class="main">
+            <section id="content">
+                <div class="todo">
+                    <div class="inner">
+                        <h1>지아이데이타 할 일 LIST</h1>
+                        <table>
+                            <caption class="hide">
+                                <h2>해야할 일</h2>
+                                <p>하루, 한달 단위</p>
+                            </caption>
+                 
+                            <colgroup>
+                                <col class="title"></col>
+                                <col class="content"></col>
+                                <col class="check"></col>
+                            </colgroup>
+                 
+                            <thead>
+                                <tr>
+                                 <th class="col">번호</th>
+                                 <th class="col">해야할 일</th>
+                                 <th class="col">체크</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>§</td>
+                                    <td>웹스퀘어 퍼블리싱 공부 + 넥사크로 공부하기 </td>
+                                    <td><button class="delete">완료</button></td>
+                                </tr>
+                                <tr>
+                                    <td>§</td>
+                                    <td>JH공부방 활성화하기</td>
+                                    <td><button class="delete">완료</button></td>
+                                </tr>
+                                <tr>
+                                    <td>§</td>
+                                    <td></td>
+                                    <td><button class="delete">완료</button></td>
+                                </tr>
+                                <tr>
+                                    <td>§</td>
+                                    <td>정보처리기사 필기 준비하기 (정리 페이지 만들기)</td>
+                                    <td><button class="delete">완료</button></td>
+                                </tr>
+                                <tr>
+                                    <td>§</td>
+                                    <td></td>
+                                    <td><button class="delete">완료</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                        <p class="newButton">
+                            <button class="add" onclick="loaction.href='create.jsp'">새 목표 추가</button>
+                            <button class="refresh">새로고침</button>
+                        </p>
+    
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <p>master_catch@naver.com / 010-4652-9973</p>
+                <p>Copyright (C) 2022 JaeHyeok-Kim All Right Reserved</p>
+            </div>
+        </footer>
+    </div>
+  
+
+
+    <!-- script -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/todo.js"></script>
+</body>
+</html>

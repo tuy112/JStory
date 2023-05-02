@@ -1,0 +1,54 @@
+/* beforePlan */
+.main .beforePlan { 
+    padding: 31px;
+    margin-top: 10px;
+}
+.main .beforePlan .summary {
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+.main .beforePlan table { 
+    border: 3px solid black;
+}
+.main .beforePlan table .w1 { width: 231px;}
+.main .beforePlan table .w2 { width: 1048px;}
+
+.main .beforePlan table thead th {
+    padding: 20px;
+    font-weight: 700;
+    font-size: 21px;
+    border-bottom: 1px solid #efefef;
+}
+.main .beforePlan table tbody tr, .main .beforePlan table tbody th, .main .beforePlan table tbody td {
+    vertical-align: middle;
+    padding: 17px 0; 
+    border-bottom: 1px solid #efefef;
+    font-size: 16px;
+    line-height: 1.9;
+}
+.main .beforePlan table tr {}
+.main .beforePlan table td:last-child {
+    display: block;
+    border-style: none;
+}
+
+
+/* ===================================================== */
+
+/* 1일차 */
+.main .story1 .paper {}
+
+/* 2일차 */
+.main .story2 .paper {}
+
+/* 3일차 */
+.main .story3 .paper .sixMan { width: 500px; height: 400px; margin: 0 auto; margin-bottom: 30px; margin-top: 30px;}
+
+/* 4일차 */
+.main .story4 .paper {}
+
+/* 5일차 */
+.main .story5 .paper {}
+
+/* review */
+.main .review .paper {}

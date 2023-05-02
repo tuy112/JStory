@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수원 만보 같이 걸읍시다 [기록]</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/manbo.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <h1>[수원] 만보를 걸읍시다</h1>
+                <ul class="gnb">
+                    <li><a href="../../index.html">JStory</a></li>
+                    <li><a href="#">지금까지의기록</a></li>
+                </ul>
+
+                <!-- call me -->
+                <a href="#" class="sales" id="sale">모임장문의 >> 커서를 올려주세요 :)</a>
+				<div class="tool" id="tools">
+					<ul>
+						<li>
+                            <strong>모임장 문의 >></strong> 
+                            <input id="myInput" value="master_catch@naver.com" readonly>
+                            <button class="btn_copy" onclick="scrapAddress()">COPY</button>
+                        </li>
+						<li>
+                            <span>010-465X-997X</span>
+                        </li>
+					</ul>
+				</div>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main id="container" class="main">
+            <div class="board">
+                <table id="record" contenteditable="true">
+                    <caption>기록</caption>
+                    <thead>
+                        <th>2022년</th>
+                        <th>닉네임</th>
+                        <th>총 걸음 수</th>
+                        <th>월 (10/17)</th>
+                        <th>화 (10/18)</th>
+                        <th>수 (10/19)</th>
+                        <th>목 (10/20)</th>
+                        <th>금 (10/21)</th>
+                        <th>토 (10/22)</th>
+                        <th>일 (10/23)</th>
+                        <th>등수</th>
+                    </thead>
+                    <tbody id="ourBody">
+                        <tr>
+                            <th rowspan="9999"">달성여부</th>
+                            <th>1.작삼 27 남 광교</th>
+                            <td>
+                                <input type ='number' id="sum" onblur="losFocus(id)" onkeydown="return showKeyCode(event,id)" />
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>2.국밥 34 남 수원</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>3.걷자 37 여 광교</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>4.다요 35 여 경기</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>5.달빛 43 남 화서</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>6.뚫뚫 38 여 광교</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>7.산쟁 43 남 당수</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>8.슈이 38 여 영통</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>9.잠만보 27 남 지동</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>10.주주 39 여 호매실</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>11.채이 45 여 인계</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>12.J_ming 26 남 세류</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>13.시아 37 여 영통</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>14.과연 25 여 경기</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>15.랄라 44 여 광교</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>16.오감자 38 여 영통</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>17.하잉 34 남 수원</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>18.심플문 41 여 오산</th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr style="display: none;">
+                            <th></th>
+                            <td id="sum"></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>만보달성률</th>
+                            <td></td>
+                            <td></td>
+                            <td>- %</td>
+                            <td>- %</td>
+                            <td>- %</td>
+                            <td>- %</td>
+                            <td>- %</td>
+                            <td>- %</td>
+                            <td>- %</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <input type="button" value="인원추가" class="recordBtn" onclick='addRow()' />
+                <input type="button" value="수정" class="recordBtn" onclick="edit()" />
+                <input type="button" value="저장" class="recordBtn" id="in" onclick="saveAs()"  /> 
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <p>엑셀작업을 웹에서 하기 위한 구현..!</p>
+                <span>매일 만보 걷고 건강해집시다</span>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- javaScript -->
+    <script src="./js/common.js"></script>
+    <script src="./js/manbo.js"></script>
+</body>
+</html>

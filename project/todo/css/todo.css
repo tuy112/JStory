@@ -1,0 +1,57 @@
+/* common part */
+/* header */
+#header { width: 100%; min-width: 1000px; position: relative;}
+#header .inner { height: 78px; margin: 0 auto;}
+#header .nav { text-align: center;}
+#header .nav .gnb { padding: 10px;}
+#header .nav .gnb li { display: inline-block; padding: 19px; cursor: pointer; border: 1px solid #dedede; border-radius: 20%;}
+#header .nav .gnb li:first-child { margin-left: 0;}
+#header .nav .gnb li a { font-size: 17px; font-weight: 600; transition: 0.5s;}
+#header .nav .gnb li:hover { background: #444;}
+#header .nav .gnb li:hover a { color: #fff;}
+
+/* main */
+.container { height: 100%;}
+.container::after { content: ""; display: block; clear: both;}
+#content { width: 100%;}
+
+/* footer */
+#footer { width: 100%; background: #444; cursor: default; position: fixed; bottom: 0;}
+#footer .inner { height: 53px;}
+#footer p { text-align: center; color: #fff; font-size: 12px; margin: 5px;}
+
+/* ==================================================== */
+
+/* main */
+/* table part */
+.main .todo { width: 1000px; margin: 20px auto; cursor: default;}
+.main .todo .inner { height: 100%;}
+.main .todo h1 { border: 1px solid #ededed; background: #000; color: #fff; font-size: 22px; padding: 10px;  text-align: center; }
+.main .todo table { width: 100%;}
+.main .todo table .title {}
+.main .todo table .content {}
+.main .todo table .check {}
+
+.main .todo table th, .main .todo table td { 
+    height: 95px; vertical-align: middle; text-align: center;
+    border-bottom: 1px solid #999;
+}
+.main .todo table thead {}
+.main .todo table thead tr {}
+.main .todo table thead tr th {
+    margin-top: 2px solid yellow;
+    background: #ededed;
+    font-size: 18px; font-weight: 500;
+}
+
+.main .todo table tbody {}
+.main .todo table tbody tr {}
+.main .todo table tbody tr td {}
+.main .todo table tbody tr td button { border: none; background: #222; border: 1px solid #222; color: #fff; padding: 8px; font-weight: 500; transition: 0.4s;}
+.main .todo table tbody tr td button:hover { background: #fff; border: 1px solid #222; cursor: pointer; color: #222;}
+
+/* newButton part */
+.main .newButton { margin-top: 50px; text-align: center;}
+.main .newButton button { display: inline-block; border: none; background: #efefef; text-align: center; line-height: 30px; transition: 0.4s; margin-left: 15px;}
+.main .newButton button:first-child { margin-left: 0;}
+.main .newButton button:hover { background: #222; color: #fff; cursor: pointer;}

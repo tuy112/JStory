@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my place</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <p id="skipNav" class="hide"><a href="#">본문 바로가기</a></p>
+     
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <div class="inner">
+                <h1>멘탈을 바꿔야 인생이 바뀐다</h1>
+                <input type="checkbox" id="trigger"/>
+                <label for="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <nav class="sideMenu">
+                    <ul class="gnb">
+                        <li><a href="#">오늘 할 일 (todo)</a></li>
+                        <li><a href="#">가계부</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="./board.html">JH 무엇이든 물어보세요(게시판)</a></li>
+                        <li><a href="#">나의 일기장</a></li>
+                    </ul>
+                    <ul class="logMenu">
+                        <li><a href="https://www.youtube.com/channel/UCIUZejYbHXZOHhwUokcRBUQ">유튜브</a></li>
+                        <li><a href="https://jh-healing-place.tistory.com/">티스토리</a></li>
+                        <li><a href="https://open.kakao.com/o/gkPk6wxe">수원만보방</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- mainVisual -->
+        <section id="mainVisual">
+            <!-- calender start -->
+            <table class="Calendar">
+                <thead>
+                    <tr>
+                        <td onClick="prevCalendar();">&#60;</td>
+                        <td colspan="5" class="yearMonth" id="yearMonth">
+                            <span id="year"></span> .
+                            <span id="month"></span>
+                        </td>
+                        <td onClick="nextCalendar();">&#62;</td>
+                    </tr>
+                    <tr>
+                        <td>SUN</td>
+                        <td>MON</td>
+                        <td>TUE</td>
+                        <td>WED</td>
+                        <td>THU</td>
+                        <td>FRI</td>
+                        <td>SAT</td>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- main -->
+        <main id="container" class="main">
+            <div class="content">
+                <div class="work w1">
+                    <div class="inner">
+                        <h3>오늘의 날씨는?</h3>
+                        <div class="weather">
+                            <span class="weatherInfo"></span>
+                            <img class="weatherIcon" />
+                            <div class="city"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="work w2">
+                    <div class="inner">
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
+                <div class="work w3">
+                    <div class="inner"></div>
+                </div>
+            </div>
+                <div class="work w4">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="inner">
+                <p class="clock" id="clock"></p>
+                <p class="date" id="date"></p>
+    
+                <p class="copyRight"><a href="https://jh-healing-place.tistory.com/">made by JStol</a></p>
+            </div>
+        </footer>
+
+    </div> <!-- end wrap-->
+
+
+    <!-- javascript -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

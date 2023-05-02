@@ -1,0 +1,132 @@
+
+/* Web Font Load */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* { box-sizing: border-box;}
+
+/* Type Selector Reset */
+body {
+	font-weight: 400;
+	font-family: 'jua', sans-serif;
+	font-size: 1em;
+	line-height: 1.25;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	cursor: default;
+	background: radial-gradient(ellipse at bottom, #144B98 0%, #090a0f) 100%;
+	overflow: hidden;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, figure {
+	margin: 0;
+	padding: 0;
+}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+	display: block;
+}
+button, input[type=submit], input[type=reset], input[type=button] {
+	overflow: visible;
+	cursor: pointer;
+}
+input[type=text], input[type=email], input[type=password], input[type=submit], textarea {
+	-webkit-appearance: none;
+}
+input, select, textarea, button {
+	font-family: 'jua', sans-serif;
+	font-size: 100%;
+	border-radius: 0;
+}
+ul li {
+	list-style: none;
+}
+img, fieldset {
+	border: none;
+	vertical-align: top;
+}
+hr {
+	display: none;
+}
+
+
+/* start css */
+#wrap {
+	/* position: relative; */
+    /* background-image: url(../images/bg4.jpg); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* width: 100%; */
+	/* height: 100%; */
+	/* overflow: hidden; */
+	/* max-width: 497px; */
+}
+
+.day { position: absolute; top: 10%; left: 20%;}
+.day .top { 
+	font-size: 40px;
+	font-weight: 900;
+	color: #94B9F3;
+}
+.day .top span {
+	position: relative;
+	animation: ani_text 1.5s infinite;
+}
+.day .top span:nth-child(1) { animation-delay: 0.1s;}
+.day .top span:nth-child(2) { animation-delay: 0.2s;}
+.day .top span:nth-child(3) { animation-delay: 0.3s;}
+.day .top span.today {}
+.day .notice {
+	font-size: 12px;
+	font-style: italic;
+	margin-top: 8px;
+	color: #fff;
+}
+
+.main {
+	position: absolute; top: 50%; left: 50%;
+}
+.main .content {
+	font-size: 21px;
+	font-weight: 500;
+	line-height: 2.1;
+	color: #FBB9AB;
+}
+.rose {
+	position: absolute; bottom: 10px; right: 10px;
+	cursor: pointer;
+	border-radius: 7px;
+	padding: 7px;
+	background: #ededed;
+	color: #776a77;
+	border: 2px solid #776a77;
+	transition: 0.5s;
+}
+.rose:hover {
+	background-color: #776a77;
+	color: #DDDEA5;
+}
+
+.fa-snowflake {
+	animation: fall 5s linear forwards;
+	color: #ededed;
+	position: absolute;
+}
+
+@keyframes ani_text { 0% { top: 0; } 20% { top: -0.2rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
+
+@keyframes fall {
+	to {
+		transform: translateY(90vh);
+	}
+}
+
+
+
+/* Media Screen - Mobie */
+@media screen and (max-width:767px) {}
+

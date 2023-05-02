@@ -1,0 +1,292 @@
+/* 페이지의 공통부분 */
+#wrap {
+    max-width: 1536px;
+    position: relative;
+    margin: 0 auto;
+    padding: 8px;
+    padding-top: 85px;
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
+/* header */
+#header {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 85px;
+    background: #222;
+    z-index: 9999;
+}
+#header .inner {}
+#header h1 { 
+    text-align: right; 
+    margin-right: 12px; margin-top:7px;
+    font-weight: 500;
+    color: #fff;
+    cursor: default;
+    font-size: 16px;
+}
+
+/* header - hamburger */
+#header input[id=trigger] {
+    display: none;
+}
+#header label[for=trigger] {
+    width: 30px;
+    height: 20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    margin-left: 8px;
+}
+#header label[for=trigger]>span {
+    display: block;
+    height: 4px;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    transition: 0.4s;
+    z-index: 9999;
+}
+#header label[for=trigger]>span:nth-child(1) { top: 0;}
+#header label[for=trigger]>span:nth-child(2) { top: 50%;}
+#header label[for=trigger]>span:nth-child(3) { top: 100%;}
+
+#header input[id=trigger]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+#header input[id=trigger]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#header input[id=trigger]:checked + label span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+#header input[id=trigger]:checked~.sideMenu { left: 0;}
+
+#header .sideMenu {
+    width: 250px; height: 100vh;
+    background-color: #cdcdcd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: -250px;
+    transition: 0.3s;
+}
+#header input[id=trigger]:checked+label[for=trigger] {
+    left: 185px;
+    transition: 0.3s;
+}
+
+#header .sideMenu .gnb {}
+#header .sideMenu .gnb li { text-align: center;}
+#header .sideMenu .gnb li:first-child { margin-top: 70px;}
+#header .sideMenu .gnb li a {
+    font-weight: 600;
+    line-height: 3.3;
+    font-size: 15px;
+}
+#header .sideMenu .gnb li a:hover {
+    border-bottom: 2px solid #333;
+}
+#header .logMenu {
+    text-align: center;
+}
+#header .logMenu li {
+    float: left;
+    margin-left: 13px;
+}
+#header .logMenu li:first-child {
+    margin-left: 55px;
+}
+#header .logMenu li a {
+    font-size: 12px;
+}
+#header .logMenu li a:hover {
+    border-bottom: 2px solid #333;
+}
+
+/* mainVisual */
+#mainVisual {
+    background-color : #fff;
+    height: auto;
+    width: 400px;
+    margin: 0px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius:5px;
+    box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+}
+
+
+/* 달력 css - thead */
+.Calendar { text-align: center;}
+thead {
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+td {
+    width: 50px;
+    height: 50px;
+}
+.Calendar thead tr:first-child td {
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Calendar thead tr:last-child td {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 달력 css - tbody */
+.Calendar tbody tr td p {
+    font-family: 'Montserrat', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}        
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    background-color: #F5D042;            
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.futureDay:hover{
+    background:#eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* main */
+.main {
+    margin-top: 45px;
+    cursor: default;
+}
+.main .work {}
+.main .w1 {}
+.main .w1 .inner {}
+.main .weather {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .weather * {
+    margin: 10px;
+    color: #fce4ec;
+}
+.main .w1 h3 { 
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main .w1 p { 
+    text-align: center;
+}
+
+
+/* footer */
+#footer {}
+#footer .inner {}
+.date {
+    position: fixed;
+    bottom: 3px; right: 11px;
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    text-align: right;
+    margin-top: -35px;
+    cursor: default;
+}
+.clock {
+    position: fixed;
+    bottom: 18px; right: 7px;
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+    cursor: default;
+}
+/* copyRight */
+.copyRight {
+    position: fixed;
+    bottom: 3px; left: 10px;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.copyRight a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.copyRight a:hover {
+    border-bottom: 3px solid #333;
+}
+
+
+
+
+/* 반응형 적용 */
+@media screen and ( min-width: 700px ) {
+    #mainVisual {
+        background-color : white;
+        height: auto;
+        width: 750px;
+        margin: 0px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+    }
+    .Calendar {    
+        width: 600px; margin: 40px;
+    }       
+}
+
+@media screen and ( min-width: 1200px ) {
+    #mainVisual {
+        background-color : white;
+        height: auto;
+        width: 1250px;
+        margin: 0px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius:20px;
+        box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+    }
+    .Calendar {    
+        width: 1200px; margin: 40px;
+    }
+}

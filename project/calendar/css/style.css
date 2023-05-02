@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* { cursor: default;}
+
+body {
+    background-color: #fffff0;
+}
+div {
+    background-color : white;
+    height: auto;
+    width: 400px;
+    margin: 0px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius:5px;
+    box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+}
+
+
+/* 달력 css - thead */
+.Calendar { text-align: center;}
+thead {
+    padding-top: 40px;
+    position: relative;
+    margin: 0 auto;
+}
+td {
+    width: 50px;
+    height: 50px;
+}
+.Calendar thead tr:first-child td {
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.Calendar thead tr:last-child td {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* 달력 css - tbody */
+.Calendar tbody tr td p {
+    font-family: 'Montserrat', sans-serif;
+    height: 45px;
+    width: 45px;
+    border-radius: 45px;
+    transition-duration: .2s;
+    line-height: 45px;
+    margin: 2.5px;
+    display: block;
+    text-align: center;
+}        
+
+.pastDay {
+    color: lightgray;
+}
+
+.today {
+    background-color: #F5D042;            
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.futureDay {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.futureDay:hover{
+    background:#eee;
+}
+
+.futureDay.choiceDay,
+.today.choiceDay {
+    background: #0A174E;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* 시계 css + copyRight */
+#footer {}
+.date {
+    position: fixed;
+    bottom: 3px; right: 10px;
+
+    font-family: 'Jua', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    text-align: right;
+    margin-top: -35px;
+}
+.clock {
+    position: fixed;
+    bottom: 4px; right: 10px;
+
+    font-family: 'Jua', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* copyRight */
+.copyRight {
+    position: fixed;
+    bottom: 3px; left: 10px;
+    font-family: 'Jua', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+.copyRight a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.copyRight a:hover {
+    border-bottom: 3px solid #333;
+}
+
+
+
+/* 반응형 적용 */
+@media screen and ( min-width: 700px ) {
+    div {
+        background-color : white;
+        height: auto;
+        width: 750px;
+        margin: 0px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius:15px;
+        box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+    }
+    .Calendar {    
+        width: 600px; margin: 40px;
+    }       
+}
+
+@media screen and ( min-width: 1200px ) {
+    div {
+        background-color : white;
+        height: auto;
+        width: 1250px;
+        margin: 0px;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius:20px;
+        box-shadow:0px 40px 30px -20px rgba(0,0,0,0.3);
+    }
+    .Calendar {    
+        width: 1200px; margin: 40px;
+    }
+}

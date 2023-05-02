@@ -1,0 +1,99 @@
+/* sublayout */
+#subVisual { width: 100%; height: 400px; background-repeat: no-repeat; background-position: 0 0; background-size: cover;}
+#subVisual.visual1 { background-image: url(../images/subVisual2.png); opacity: 0.8;}
+#subVisual.visual2 { background-image: url(../images/subvisual2.png); opacity: 0.8;}
+
+#subVisual .visualTxt { padding-top: 65px; padding-left: 50px;}
+#subVisual .visualTxt h2 { font-size: 45px; color: #fff;}
+
+/* subVisual */
+#subVisual {
+    width: calc(100%, -250px);
+    margin-left: 250px;
+    transition: all 0,5s ease;
+}
+
+/* sub1 */
+.main .profile {}
+
+/* intro */
+.main .intro { 
+    width: calc(100%, -200px);
+    margin-left: 200px;
+    transition: all 0,5s ease;
+}
+.main .intro .inner { height: 100%;}
+.main .intro h2 { font-size: 40px; font-weight: 600; margin-bottom: 22px; text-align: center; margin-left: -42px;}
+.main .intro .txtWrap { text-align: center; padding: 60px;}
+.main .intro .txtWrap img { width: 400px; height: 500px;}
+.main .intro .txtWrap p { font-size: 16px; font-weight: 300; line-height: 1.9; margin-top: -70px; margin-bottom: 70px;}
+
+/* addi */
+.main .addi { 
+    width: calc(100%, -200px);
+    margin-left: 200px;
+    transition: all 0,5s ease;
+}
+.main .addi .inner { height: 300px;}
+.main .addi ul { text-align: center;}
+.main .addi ul li { display: inline-block; margin-left: 100px; width: 300px}
+.main .addi ul li:first-child { margin-left: 0;}
+.main .addi ul li div {}
+.main .addi ul li div h2 { font-size: 30px; font-weight: 500; text-align: center; margin-bottom: 20px;}
+.main .addi ul li div p { font-size: 16px; font-weight: 300; line-height: 1.9;}
+
+/* ================================================================ */
+
+/* sub2 */
+.main .projectBox { 
+    width: calc(100%, -300px);
+    margin-left: 300px;
+    transition: all 0,5s ease;
+    padding: 100px 0;
+}
+.main .projectBox h2 { font-size: 28px; font-weight: 500; margin-bottom: 22px;}
+.main .projectBox p { font-size: 16px; font-weight: 300; line-height: 2.2; margin-bottom: 12px;}
+.main .projectBox p:last-child { margin-bottom: 0;}
+
+.main .project { 
+    width: calc(100%, -300px);
+    margin-left: 300px;
+    transition: all 0,5s ease;
+}
+.main .project .inner { height: 100%;}
+.main .project em { padding-left: 20px; font-size: 10px; font-weight: 400;}
+.main .project p a { font-size: 16px; font-weight: 300; line-height: 2.2; margin-bottom: 12px; transition: 0.4s;}
+.main .project p a:hover { font-weight: 600;}
+
+.main .education { 
+    width: calc(100%, -300px);
+    margin-left: 300px;
+    transition: all 0,5s ease;
+}
+.main .education .inner { height: 100%;}
+.main .education .program {}
+
+
+/* footer */
+#footer { 
+	width: calc(100%, -250px);
+    margin-left: 250px;
+    transition: all 0,5s ease;
+	
+}
+#footer .inner { height: 180px;}
+#footer h3 { color: #fff; font-size: 30px; font-weight: 700; margin-bottom: 5px; margin-left: 15px; margin-top: 28px;}
+#footer .link { position: absolute; left: 20px; bottom: 0;}
+#footer .link li { float: right; margin-right: 10px;}
+#footer .link li:first-child { margin-left: 0;}
+#footer .link li img { width: 20px; height: 20px;}
+#footer .link li a {
+	font-size: 15px;
+    font-weight: 500;
+	color: #fff;
+	transition: 0.3s;
+}
+#footer .always p { font-weight: 100; font-size: 16px; font-style: italic; letter-spacing: -0.3px; color: #fff; padding-left: 15px;}
+
+#footer .top { position: absolute; right: 20px; bottom: 0;}
+#footer .top a i { font-size: 30px; border: 1px solid #fff; color: #fff;}

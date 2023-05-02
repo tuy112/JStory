@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	overflow-x: hidden;
+	margin: 0;
+	position: relative;
+	line-height: 1.6;
+    font-size:16px;    
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+	line-height: 1.6;
+    font-size:16px;    
+    text-decoration: none;
+    color:#333;
+}
+
+ol, ul , li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.hide {
+	position: absolute;
+	left: 0; top: 0;
+	width: 0; height: 0;
+	text-indent: -9999em;
+	overflow: hidden;
+	visibility: hidden;
+	line-height: 0;
+}
+
+/* #header {display: none;}
+#mainVisual,.main,#footer { display: none;} */
+#header + #mainVisual + #subVisual + .main + #footer {
+	height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* 페이지의 공통부분 */
+/* layout  */
+#wrap {}
+.inner { margin: auto; position: relative; box-sizing: border-box;}
+
+/* header sideBar */
+body.active #wrap .sideBar{ left: -250px;}
+body.active #wrap #mainVisual{ left: -250px;}
+body.active #wrap #subVisual{ left: -250px;}
+body.active #wrap .main{ left: -250px;}
+
+
+body.active #wrap .menu { margin-left: 0; width: 100%;}
+
+#wrap .sideBar {
+    background : #7474da;
+    position: fixed;
+    top: 0; left: 0; width: 250px; height: 100%; padding: 20px 0; transition: all 0.5s ease; z-index: 0;
+}
+#wrap .sideBar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+#wrap .sideBar .profile img {
+    display: block;
+    width: 100px; height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+#wrap .sideBar .profile h3 { color: #fff; margin: 10px 0 5px;}
+#wrap .sideBar .profile p { color: rgb(206,240,253); font-size: 14px;}
+
+/* sideBar Menu */
+#wrap .sideBar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px; position: relative;
+}
+#wrap .sideBar ul li a .icon {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+#wrap .sideBar ul li a:hover, #wrap .sideBar ul li a.active { 
+    color: #0c7db1; background-color: #fff; 
+    border-right: 2px solid rgb(5,68,104);
+}
+#wrap .sidebar ul li a:hover .icon, #wrap .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+#wrap .sideBar ul li a:hover:before, #wrap .sideBar ul li a.active:before {
+    display: block;
+}
+
+/* sideBar Hamburger Menu */
+#wrap .menu {
+    width: calc(100%, -250px);
+    margin-left: 250px;
+    transition: all 0,5s ease;
+}
+#wrap .menu .top_navBar {
+    background: rgb(7, 105, 105);
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+#wrap .menu .top_navBar .hamburger a { font-size: 30px; color: #fff;}
+
+/* header, main, footer */
+#header {}
+#header .inner {}
+#header h1 { position: fixed; top: 3px; right: 18px; }
+#header h1 a { display: block; color: #fff; font-size: 35px; font-weight: 600; transition: 0.5s;}
+#header h1 a:hover { font-size: 36px;}
+
+
+/* main */
+#container { height: 100%;}
+#container::after { content: ""; display: block; clear: both;}
+#content {}
+
+/* footer */
+
+
+/* ========================================================= */

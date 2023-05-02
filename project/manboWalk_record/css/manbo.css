@@ -1,0 +1,110 @@
+#wrap { width: 100%;}
+#wrap.inner { height: 100%;}
+
+/* header */
+#header { position: relative;}
+#header .inner { height: 150px; padding: 30px;}
+#header h1 { font-size: 30px; font-weight: bold;}
+#header .gnb { position: absolute; top: 38px; right: 100px;}
+#header .gnb li { float: left; margin-left: 25px;}
+#header .gnb li:first-child { margin-left: 0;}
+#header .gnb li a { transition: 0.5s; font-size: 18px; font-weight: 500;}
+#header .gnb li a:after {
+    display: block;
+    content: '';
+    border-bottom: 3px solid #f59000;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+#header .gnb li a:hover {}
+#header .gnb li a:hover:after {
+    transform: scaleX(1);
+}
+
+/* header call me */
+#header .sales { 
+    float: left;
+    margin-top: 20px;
+    padding-bottom: 6px;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 900;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+#header .tool { 
+    display: none;
+    position: absolute; top: 100px; 
+    color: #333; 
+}
+#header .tool ul {}
+#header .tool ul li { 
+    margin-bottom: 22px; 
+    padding: 0 10px 8px;
+    border-bottom: 1px solid #333;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+#header .tool ul li:nth-child(2) {
+    padding: 0; border: none;
+}
+#header .tool ul li:nth-child(2) span {
+    display: inline-block;
+    padding: 0 12px 5px 12px;
+    border-bottom: 1px solid #333;
+    letter-spacing: 1px;
+}
+#header .tool strong {
+    padding-right: 25px; font-weight: 900;
+}
+#header .tool .btn_copy {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    padding: 0 12px;
+    height: 18px;
+    line-height: 16px;
+    border-radius: 9px;
+    background-color: #333;
+    font-size: 10px; color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* main */
+#container { height: 100%; padding: 30px; margin-bottom: 40px;}
+#container::after {}
+
+.main .board {}
+.main .board table { padding: 25px; border:2px solid #333;margin-top: 45px;}
+.main .board table caption { font-size: 20px; font-weight: 600; margin-bottom: 7px;}
+.main .board table thead th,td { padding: 5px; border:2px solid #333;}
+.main .board table tbody th,td { 
+    padding: 5px; border:1px solid #333; text-align: center;
+}
+
+.main .board .recordBtn {
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid #333;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.main .board .recordBtn:first-child {
+    margin-left: 0;
+}
+.main .board .recordBtn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* footer */
+#footer { width: 100%; background-color: #333; bottom: 0; }
+#footer .inner { height: 100%; padding: 30px;}
+#footer p { color: #fff; font-size: 18px; font-weight: 600;}
+#footer span { font-style: italic; color: #fff; font-size: 13px; font-weight: 600;}

@@ -1,0 +1,172 @@
+/* mainVisual */
+#mainVisual { width: 100%; height: 650px; position: relative;}
+#mainVisual .cnt {
+    width: 100%; height: 650px;
+    position: relative;
+}
+#mainVisual .cnt li {
+    width: 100%; height: 650px; 
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+    background-size: cover; 
+    position: absolute; 
+    left: 0; top: 0;
+
+    animation: aniBanner 25s linear infinite;
+    opacity: 0;
+}
+#mainVisual .cnt li:nth-child(1) {
+    background-image: url(../images/visual/Day1_twoMan.jpg);
+    animation-delay: 0s;
+}
+#mainVisual .cnt li:nth-child(2) {
+    background-image: url(../images/visual/Day2_LeeHwaReong.jpg);
+    animation-delay: 5s;
+}
+#mainVisual .cnt li:nth-child(3) {
+    background-image: url(../images/visual/Day3_together.jpg);
+    animation-delay: 10s;
+}
+#mainVisual .cnt li:nth-child(4) {
+    background-image: url(../images/visual/Day4_RainyDay.jpg);
+    animation-delay: 15s;
+}
+#mainVisual .cnt li:nth-child(5) {
+    background-image: url(../images/visual/Day5_finish.jpg);
+    animation-delay: 20s;
+}
+@keyframes aniBanner {
+    0% { opacity: 0;}
+    15% { opacity: 1;}
+    20% { opacity: 1;}
+    25% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+#mainVisual .cnt li .txt-box {
+    width: 700px; 
+    padding-top: 250px; 
+    margin: 0 auto; 
+    color:#fff;
+}
+#mainVisual .cnt li .txt-box h2 {
+    font-size: 45px; font-weight: 600; line-height: 1.3; letter-spacing: 2px;
+}
+#mainVisual .cnt li .txt-box h2 + p {
+    font-size: 20px;
+}
+#mainVisual .cnt li .txt-box .more { margin-top: 40px;}
+#mainVisual .cnt li .txt-box .more a {
+    display: block; 
+    width: 200px; height: 50px; 
+    border-radius: 25px; 
+    border: 1px solid #fff; 
+    text-align: center; 
+    line-height: 50px; 
+    color:#fff;
+    cursor: pointer;
+}
+#mainVisual .cnt li .txt-box .more a i { vertical-align: middle;}
+
+
+#mainVisual .scroll { 
+    position: absolute; 
+    bottom: 50px; left: 50%; 
+
+    transform: translateX(-50%); 
+    animation: ani 0.7s linear infinite alternate;
+}
+@keyframes ani {
+    0% { bottom:70px }
+    100% { bottom:50px }
+}
+
+
+
+
+/* main -history */
+.main .history { width: 100%; min-width: 1280px;}
+.main .history .inner { padding-top: 100px; height: 100%;}
+
+.main .history h2 {
+    position: relative;
+    font-size: 32px;
+    color: #333;
+    line-height: 1;
+    font-weight: 700;
+}
+.main .history h2::before {
+    content: "";
+    position: absolute;
+    left: -40px; top: 50%;
+    width: 17px; height: 17px;
+    border-radius: 100%;
+    background: #1fa7f1;
+
+    transform: translateY(-50%);
+    border: 5px solid #ff5a2b;
+    box-sizing: border-box;
+}
+.main .history .short-view {
+    position: relative;
+    padding: 0 0 0 40px;
+}
+.main .history .short-view::before {
+    content: "";
+    position: absolute;
+    left: 8px; top: 0;
+    height: 100%;
+    border-left: 2px solid #ddd;
+}
+.main .history .short-view:first-child:before {
+    top: 10px; height: calc(100%-10px);
+}
+.main .history dl { padding: 20px 0 74px;}
+.main .history dl dt {
+    position: relative;
+    font-size: 25px;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+.main .history dl dt::before {
+    content: "";
+    position: absolute;
+    left: -37px; top: 50%;
+    width: 13px; height: 13px;
+    border-radius: 100%;
+    background: #1fa7f1;
+
+    transform: translateY(-50%);
+    border: 2px solid #ff5a2b;
+    box-sizing: border-box;
+}
+.main .history dl dd {
+    line-height: 2.3;
+}
+.main .history dl dd strong {
+    display: block;
+    font-size: 17px;
+    color: #333;
+    line-height: 2.1;
+    font-weight: 400;
+}
+.main .history dl dd em {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
