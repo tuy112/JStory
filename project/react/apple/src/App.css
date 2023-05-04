@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  cursor: default;
+}
+#header {
+  display: flex;
+  background: #333;
+  width: 100%;
+  padding-left: 20px;
+}
+#header h3 {
+  color: #fff;
+}
+
+/* main start */
+.main {}
+div { box-sizing: border-box;}
+.main .work {
+  padding-left: 20px;
+  text-align: left;
+  border-bottom: 1px solid #999;
+}
+.main .w1 h4 button {
+  background: none;
+  border-radius: 100%;
+  border: 0.1px solid #333;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.main .w1 h4 button:hover {
+  background: #333;
+}
+.main .w2 h4 button {
+  margin-left: 10px;
+  background: none;
+  border: 0.1px solid #333;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main .w2 h4 button:hover {
+  background: #333;
+  color: #fff;
+}
+.main .w3 {}
+
+
+/* Modal */
+.modal {
+  margin-top: 20px;
+  padding: 20px;
+  background: #eee;
+  text-align: left;
+}
