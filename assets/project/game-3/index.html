@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내가 만드는 3번째 게임 - 공튀기기 응용</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="import" href="./js/main.js">
-</head>
-<body>
-   <p>내가 만드는 3번째 게임</p>
-   <canvas id="ball"></canvas>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
 
+    <div class="gameRule">
+      <h3>게임 설명</h3>
+      <p>
+        뱀&#40;라임색&#41; 이 고기&#40;갈색&#41; 를 먹으면서 몸을 불려나가는
+        게임<br />
+        ※ 단, 뱀의 머리가 꼬리에 닿으면 게임 오버!!<br />
+        <br />
+        ←↑→↓ 방향키로 뱀을 움직이세요
+      </p>
+    </div>
 
-   <!-- script -->
-   <script src="./js/app.js " type="module"></script>
-</body>
+    <!-- script part -->
+    <script src="./index.js"></script>
+  </body>
 </html>
