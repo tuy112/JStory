@@ -35,12 +35,12 @@
     transition: all 0,5s ease;
 }
 .main .addi .inner { height: 300px;}
-.main .addi ul { text-align: center;}
-.main .addi ul li { display: inline-block; margin-left: 100px; width: 300px}
-.main .addi ul li:first-child { margin-left: 0;}
-.main .addi ul li div {}
-.main .addi ul li div h2 { font-size: 30px; font-weight: 500; text-align: center; margin-bottom: 20px;}
-.main .addi ul li div p { font-size: 16px; font-weight: 300; line-height: 1.9;}
+.main .addi div { 
+    text-align: center;
+    width: 300px;
+}
+.main .addi div h2 { font-size: 30px; font-weight: 500; text-align: center; margin-bottom: 20px;}
+.main .addi div p { font-size: 16px; font-weight: 300; line-height: 1.9;}
 
 /* ================================================================ */
 
@@ -82,7 +82,7 @@
 	
 }
 #footer .inner { height: 180px;}
-#footer h3 { color: #fff; font-size: 30px; font-weight: 700; margin-bottom: 5px; margin-left: 15px; margin-top: 28px;}
+#footer h3 { color: #fff; font-size: 25px; font-weight: 700; margin-bottom: 5px; margin-left: 15px; margin-top: 28px;}
 #footer .link { position: absolute; left: 20px; bottom: 0;}
 #footer .link li { float: right; margin-right: 10px;}
 #footer .link li:first-child { margin-left: 0;}
