@@ -1,9 +1,10 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
+
 const { Users } = require("../models");
 const router = express.Router();
 
-// 1. 유저 회원 가입 API [POST]
+// 1. 회원가입 API [POST]
 router.post("/signup", async (req, res) => {
   console.log(req.body);
   const { email, password, passwordConfirm } = req.body;
@@ -50,7 +51,7 @@ router.post("/signup", async (req, res) => {
   }
 });
 
-// 2. 사장님 로그인 API [POST]
+// 2. 로그인 API [POST]
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
   console.log(email, password);
@@ -172,3 +173,4 @@ router.delete("/user/:userId", async (req, res) => {
 });
 
 module.exports = router;
+

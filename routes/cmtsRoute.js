@@ -16,7 +16,7 @@ router.get('/posts/:postId/cmts', async (req, res) => {
 });
 
 // 댓글 작성 API (POST)
-router.post('/posts/:postId/cmts', authMiddleware, async (req, res) => {
+router.post("/posts/:postId/cmts", authMiddleware, async (req, res) => {
   const { userId } = res.locals.user;
   const { postId } = req.params;
   const { content } = req.body;
@@ -24,7 +24,7 @@ router.post('/posts/:postId/cmts', authMiddleware, async (req, res) => {
   const cmt = await Cmts.create({
     userId: userId,
     postId: postId,
-    content: content
+    content: content,
   });
 
   return res.status(201).json({ data: cmt });
