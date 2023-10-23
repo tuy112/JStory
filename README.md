@@ -1,2 +1,2 @@
 # JStory
-Jae Hyeok's github
+Jae Hyeok's story
