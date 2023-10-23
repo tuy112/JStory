@@ -1,6 +1,6 @@
 const express = require("express");
-const { Posts } = require("../assets/project/jboard-lv4/models");
-const authMiddleware = require("../assets/project/jboard-lv4/middlewares/authMiddleware");
+const { Posts } = require("../models");
+const authMiddleware = require("../middlewares/authMiddleware");
 const router = express.Router();
 
 // 게시글 등록 [POST]
