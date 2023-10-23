@@ -1,9 +1,10 @@
 const express = require("express");
 const jwt = require("jsonwebtoken");
-const { Users } = require("../assets/project/jboard-lv4/models");
+
+const { Users } = require("../models");
 const router = express.Router();
 
-// 1. 회원 가입 API [POST]
+// 1. 회원가입 API [POST]
 router.post("/signup", async (req, res) => {
   console.log(req.body);
   const { email, password, passwordConfirm } = req.body;
@@ -172,3 +173,4 @@ router.delete("/user/:userId", async (req, res) => {
 });
 
 module.exports = router;
+
