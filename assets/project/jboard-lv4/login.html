@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>jboard - lv1</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="login">
+            <h1>로그인</h1>
+
+            <form action="/login" method="POST">
+                <label for="username">사용자명:</label>
+                <input type="text" id="username" name="username" placeholder="아이디를 입력해주세요!" />
+                <br />
+                <label for="password">비밀번호:</label>
+                <input type="password" id="password" name="password" />
+                <br />
+                <button type="submit" class="loginBtn">로그인</button>
+            </form>
+
+            <form action="/signup" method="GET">
+                <button type="submit" class="signupBtn">회원가입</button>
+            </form>
+        </div>
+
+        <!-- script part -->
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>

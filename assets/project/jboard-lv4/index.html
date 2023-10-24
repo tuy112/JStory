@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jboard</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <div class="inner">
+                <h1><a href="./index.html">JBoard</a></h1>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./signup.html">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="container" class="main">
+            <div class="jboard">
+                <h1>게시글 목록</h1>
+                <table id="post-list" class="postList">
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성 날짜</th>
+                            <th>내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>제목예시입니다</td>
+                            <td>userId</td>
+                            <td>createAt</td>
+                            <td>내용</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <!-- 댓글 작성을 위한 입력 필드와 버튼 -->
+                        <div class="postBox">
+                            <input type="text" id="comment-author" class="title" placeholder="제목" />
+                            <input type="text" id="comment-content" class="content" placeholder="내용" />
+                            <button id="comment-submit" class="commentBtn">게시글 올리기</button>
+                        </div>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+
+        <footer id="footer">
+            <p>designed by Jstol</p>
+        </footer>
+
+        <!-- script part -->
+        <script type="module" src="./js/main.js"></script>
+    </body>
+</html>

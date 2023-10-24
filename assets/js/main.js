@@ -2,15 +2,15 @@
 function land() {
     location.href='./project/bicycle/index.html'
 }
-function JiData() {
-    location.href='./project/jidata/index.html'
+function chiolgram() {
+    location.href='./project/'
 }
-function manbo() {
-    location.href='./project/manboWalk/index.html'
+function board() {
+    location.href='../project/jboard-lv4'
 }
-function studyRoom() {
-    location.href='./project/study/index.html'
+function nivea() {
+    location.href='../project/teamNivea/templates/index.html'
 }
 function todo() {
-    location.href='./project/todo/index.html'
+    location.href='../project/todo/index.html'
 }

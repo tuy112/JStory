@@ -1,0 +1,179 @@
+/* header */
+#header {
+    width: 100%;
+    position: relative;
+    background: #fbceb1;
+}
+#header .inner {
+    height: 80px;
+}
+#header h1 a {
+    font-weight: 600;
+}
+.nav {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}
+.nav .gnb {}
+.nav .gnb li {
+    float: left;
+    padding-left: 10px;
+}
+.nav .gnb li:first-child {
+    padding-left: 0;
+}
+.nav .gnb li a {
+    font-size: 14px;
+    padding: 3px;
+    box-shadow: 2px 2px 1px #666;
+}
+.nav .gnb li a:active {
+    box-shadow: none;
+}
+
+
+/* login css */
+.login {
+    margin-top: 60px;
+}
+form {
+    text-align: center;
+}
+form label {
+    font-size: 15px;
+    margin-right: 10px;
+}
+form input {
+    border: 2px solid #333;
+    margin-bottom: 10px;
+}
+form .loginBtn {
+    width: 252px;
+    transition: 0.3s;
+    background: none;
+    font-weight: 500;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+form .loginBtn:hover {
+    background: #333;
+    color: #fff;
+}
+form .signupBtn {
+    width: 252px;
+    transition: 0.3s;
+    background: none;
+    font-weight: 500;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+form .signupBtn:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/* signup css */
+.emailBox {
+    margin-left: 13px;
+}
+form .signcomBtn {
+    width: 252px;
+    transition: 0.3s;
+    background: none;
+    font-weight: 500;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+form .signcomBtn:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/* board css */
+.jboard {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+  
+h1 {
+    font-size: 24px;
+    margin-bottom: 13px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+/* table - detail */
+.postList thead tr th {
+    font-size: 14px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.postList tbody tr td {
+    text-align: center;
+    font-size: 14px;
+}
+
+/* table - detail - btn */
+.postBox {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.postBox .title {
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+.postBox .content {
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+.postBox .commentBtn {
+    background: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.postBox .commentBtn:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+#footer p {
+    font-weight: 600;
+    font-size: 10px;
+}
