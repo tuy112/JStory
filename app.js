@@ -4,7 +4,10 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const app = express();
 const port = 3000;
-// const userRouter = require("./routes/usersRoute");
+
+const userRouter = require("./routes/usersRoute");
+const postRouter = require("./routes/usersRoute");
+const cmtRouter = require("./routes/usersRoute");
 
 const path = require("path");
 
@@ -12,7 +15,7 @@ const path = require("path");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use("/api", userRouter);
+app.use("/api", [userRouter, postRouter, cmtRouter]);
 // Middleware ==================================================
 
 // HTML, CSS

@@ -41,7 +41,7 @@ router.post("/signup", async (req, res) => {
   }
 
   try {
-    await Users.create({ email, password });
+    await Users.create({ email, password, passwordConfirm });
     return res.status(201).json({ message: "유저가 등록되었습니다." });
   } catch (error) {
     console.log(error);

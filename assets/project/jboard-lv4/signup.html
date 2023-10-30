@@ -6,6 +6,10 @@
     <title>회원가입 페이지입니다!</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Jquery & axios -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="http://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class="login">
@@ -13,20 +17,20 @@
 
       <form action="/signup" method="POST">
         <label for="usersId">사용자명:</label>
-        <input type="text" id="usersId" name="usersId" placeholder="아이디를 입력해주세요">
+        <input type="text" id="email" name="email" placeholder="이메일을 입력해주세요">
         <br>
         <label for="password">비밀번호:</label>
         <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요">
         <br>
         <label for="password">번호확인:</label>
-        <input type="password" id="passwordCheck" name="passwordCheck" placeholder="비밀번호를 입력해주세요">
+        <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="비밀번호를 입력해주세요">
         <br>
-        <button type="submit" class="signcomBtn">회원가입완료</button>
+        <button type="button" class="signcomBtn" onclick="signup();">회원가입완료</button>
       </form>
     </div>
 
 
     <!-- script part -->
-    <script type="module" src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
