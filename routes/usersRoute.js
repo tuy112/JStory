@@ -83,12 +83,12 @@ router.post("/login", async (req, res) => {
     res.cookie("authorization", `Bearer ${token}`);
 
     // 3. response
-    return res.status(200).json({ message: "사장님 환영합니다." });
+    return res.status(200).json({ message: "환영합니다^^" });
   } catch (error) {
     console.error(error);
     return res
       .status(400)
-      .json({ message: "사장님 로그인 과정에 오류가 발생하였습니다." });
+      .json({ message: "로그인 과정에 오류가 발생하였습니다." });
   }
 });
 
@@ -171,6 +171,12 @@ router.delete("/user/:userId", async (req, res) => {
     });
   }
 });
+
+// 6. 로그아웃
+router.get("/user/:userId/logout", async (req, res) => {
+  req.logout();
+  res.redirect('./assets/project/index.html');
+})
 
 module.exports = router;
 
