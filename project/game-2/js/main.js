@@ -21,7 +21,7 @@ function Bullet() {
     this.x = 0; 
     this.y = 0;
     this.init = function(){
-        this.x = humanX + 13.5;
+        this.x = humanX + 12.5;
         this.y = humanY - 10;
 
         this.alive = true; //true면 살아있는 총알
@@ -29,7 +29,7 @@ function Bullet() {
     }
     // 총알 발사
     this.update = function(){
-        this.y -= 7;
+        this.y -= 6;
     }
 
     // 총알이 적군에 맞았을 때
@@ -63,7 +63,7 @@ function Enemy() {
     };
     // 적군이 내려오도록...
     this.update = function(){
-        this.y += 3;
+        this.y += 1;
 
         // gameover
         if (this.y >= canvas.height -42 ) {
@@ -121,7 +121,7 @@ function createEnemy() {
     const interval = setInterval(function(){
         let e = new Enemy()
         e.init()
-    },1000)
+    },800)
 }
 
 function update() {
@@ -178,7 +178,7 @@ function render() {
 
 function main() {
     if (!gameover) {
-        update(); // 좌표 값 업데이트
+        update(); // 좌표 값 업데이트 
         render(); // 그려주다
         requestAnimationFrame(main);
     }else {
